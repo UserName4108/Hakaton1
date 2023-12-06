@@ -196,8 +196,8 @@
   <widget class="QLabel" name="z2">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>300</y>
+     <x>550</x>
+     <y>290</y>
      <width>55</width>
      <height>16</height>
     </rect>
@@ -209,8 +209,8 @@
   <widget class="QLabel" name="z3">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>320</y>
+     <x>480</x>
+     <y>310</y>
      <width>181</width>
      <height>21</height>
     </rect>
@@ -222,8 +222,8 @@
   <widget class="QLabel" name="z4">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>350</y>
+     <x>550</x>
+     <y>340</y>
      <width>55</width>
      <height>16</height>
     </rect>
@@ -251,8 +251,8 @@
   <widget class="QLabel" name="z1">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>300</y>
+     <x>390</x>
+     <y>290</y>
      <width>71</width>
      <height>41</height>
     </rect>
@@ -297,8 +297,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QLabel" name="z5">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>390</y>
+     <x>480</x>
+     <y>380</y>
      <width>55</width>
      <height>16</height>
     </rect>
@@ -310,8 +310,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QLabel" name="z6">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>440</y>
+     <x>480</x>
+     <y>430</y>
      <width>81</width>
      <height>16</height>
     </rect>
@@ -323,8 +323,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QLabel" name="z7">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>480</y>
+     <x>480</x>
+     <y>470</y>
      <width>51</width>
      <height>16</height>
     </rect>
@@ -334,20 +334,26 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
    </property>
   </widget>
   <widget class="QLineEdit" name="z9">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>480</y>
+     <x>560</x>
+     <y>470</y>
      <width>113</width>
      <height>22</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="z8">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>440</y>
+     <x>560</x>
+     <y>430</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -356,8 +362,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QPushButton" name="z11">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>290</y>
+     <x>230</x>
+     <y>280</y>
      <width>121</width>
      <height>28</height>
     </rect>
@@ -369,8 +375,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QPushButton" name="p3">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>330</y>
+     <x>230</x>
+     <y>320</y>
      <width>121</width>
      <height>31</height>
     </rect>
