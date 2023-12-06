@@ -1,7 +1,7 @@
 from PyQt5 import uic, QtWidgets
 import sqlite3
 Form, _ = uic.loadUiType("1.ui")
-#1
+#12
 a = ''
 #####################
 class Ui(QtWidgets.QDialog, Form):#
