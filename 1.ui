@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog{
-backgroud-color:rgb(71, 71, 71)
+backgroud-color: rgb(71, 71, 71)
 }</string>
   </property>
   <widget class="QLineEdit" name="r4">
@@ -202,7 +202,7 @@ backgroud-color:rgb(71, 71, 71)
    <property name="geometry">
     <rect>
      <x>560</x>
-     <y>320</y>
+     <y>240</y>
      <width>55</width>
      <height>16</height>
     </rect>
@@ -215,7 +215,7 @@ backgroud-color:rgb(71, 71, 71)
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>340</y>
+     <y>260</y>
      <width>181</width>
      <height>21</height>
     </rect>
@@ -228,7 +228,7 @@ backgroud-color:rgb(71, 71, 71)
    <property name="geometry">
     <rect>
      <x>560</x>
-     <y>370</y>
+     <y>290</y>
      <width>55</width>
      <height>16</height>
     </rect>
@@ -257,7 +257,7 @@ backgroud-color:rgb(71, 71, 71)
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>320</y>
+     <y>240</y>
      <width>71</width>
      <height>41</height>
     </rect>
@@ -303,7 +303,7 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>400</y>
+     <y>310</y>
      <width>55</width>
      <height>16</height>
     </rect>
@@ -316,7 +316,7 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>410</y>
+     <y>330</y>
      <width>81</width>
      <height>16</height>
     </rect>
@@ -325,56 +325,11 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
     <string>Акселькоины</string>
    </property>
   </widget>
-  <widget class="QLabel" name="z7">
-   <property name="geometry">
-    <rect>
-     <x>490</x>
-     <y>430</y>
-     <width>51</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Рейтинг</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="z9">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>410</y>
-     <width>113</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>не надо</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="z8">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>390</y>
-     <width>113</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>global p</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="z11">
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>310</y>
+     <y>230</y>
      <width>121</width>
      <height>28</height>
     </rect>
@@ -387,7 +342,7 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>350</y>
+     <y>270</y>
      <width>121</width>
      <height>31</height>
     </rect>
@@ -507,8 +462,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QPushButton" name="pbd">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>410</y>
+     <x>390</x>
+     <y>400</y>
      <width>93</width>
      <height>41</height>
     </rect>
@@ -520,7 +475,7 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QPushButton" name="pbm">
    <property name="geometry">
     <rect>
-     <x>590</x>
+     <x>600</x>
      <y>500</y>
      <width>93</width>
      <height>41</height>
@@ -533,8 +488,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QPushButton" name="pbz">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>600</y>
+     <x>20</x>
+     <y>500</y>
      <width>93</width>
      <height>41</height>
     </rect>
@@ -546,9 +501,9 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QLineEdit" name="lem">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>530</y>
-     <width>113</width>
+     <x>410</x>
+     <y>500</y>
+     <width>161</width>
      <height>22</height>
     </rect>
    </property>
@@ -557,7 +512,7 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
    <property name="geometry">
     <rect>
      <x>600</x>
-     <y>270</y>
+     <y>190</y>
      <width>71</width>
      <height>22</height>
     </rect>
@@ -567,7 +522,7 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
    <property name="geometry">
     <rect>
      <x>600</x>
-     <y>250</y>
+     <y>170</y>
      <width>71</width>
      <height>16</height>
     </rect>
@@ -579,8 +534,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QPushButton" name="pbzb">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>580</y>
+     <x>0</x>
+     <y>480</y>
      <width>51</width>
      <height>21</height>
     </rect>
@@ -592,8 +547,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QPushButton" name="pbdb">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>380</y>
+     <x>390</x>
+     <y>370</y>
      <width>51</width>
      <height>21</height>
     </rect>
@@ -605,8 +560,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QPushButton" name="pbmb">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>480</y>
+     <x>570</x>
+     <y>470</y>
      <width>51</width>
      <height>21</height>
     </rect>
@@ -618,9 +573,9 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QComboBox" name="combz">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>580</y>
-     <width>73</width>
+     <x>0</x>
+     <y>550</y>
+     <width>181</width>
      <height>22</height>
     </rect>
    </property>
@@ -628,8 +583,8 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QLabel" name="lz">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>560</y>
+     <x>120</x>
+     <y>530</y>
      <width>55</width>
      <height>16</height>
     </rect>
@@ -641,9 +596,9 @@ background: linear-gradient(93deg, rgb(12,12,12)#B313FE 40.64%,rgb(44,44,44) #1A
   <widget class="QWidget" name="wz" native="true">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>180</x>
      <y>530</y>
-     <width>120</width>
+     <width>291</width>
      <height>121</height>
     </rect>
    </property>
@@ -657,20 +612,20 @@ background-color:rgb(182, 182, 182)
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>55</width>
+      <width>281</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Вопрос?</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="cb3">
+   <widget class="QRadioButton" name="cb1">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>100</y>
-      <width>81</width>
+      <y>40</y>
+      <width>271</width>
       <height>20</height>
      </rect>
     </property>
@@ -678,26 +633,26 @@ background-color:rgb(182, 182, 182)
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="cb2">
+   <widget class="QRadioButton" name="cb2">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>70</y>
-      <width>81</width>
+      <width>261</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>варианты</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="cb1">
+   <widget class="QRadioButton" name="cb3">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>40</y>
-      <width>81</width>
-      <height>21</height>
+      <y>100</y>
+      <width>261</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -708,8 +663,8 @@ background-color:rgb(182, 182, 182)
   <widget class="QLabel" name="lm">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>540</y>
+     <x>578</x>
+     <y>560</y>
      <width>101</width>
      <height>16</height>
     </rect>
@@ -721,21 +676,21 @@ background-color:rgb(182, 182, 182)
   <widget class="QLabel" name="lzm">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>510</y>
-     <width>101</width>
+     <x>510</x>
+     <y>480</y>
+     <width>31</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Цена и подтвер</string>
+    <string>Цена</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pbmp">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>560</y>
+     <x>480</x>
+     <y>530</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -744,23 +699,13 @@ background-color:rgb(182, 182, 182)
     <string>Подтвердить?</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="twm">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>560</y>
-     <width>101</width>
-     <height>101</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QWidget" name="wd" native="true">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>390</y>
+     <x>60</x>
+     <y>380</y>
      <width>311</width>
-     <height>101</height>
+     <height>121</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -772,8 +717,8 @@ background-color:rgb(182, 182, 182)
    <widget class="QLabel" name="ld">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>50</y>
+      <x>260</x>
+      <y>40</y>
       <width>41</width>
       <height>16</height>
      </rect>
@@ -798,8 +743,8 @@ background-color:rgb(182, 182, 182)
    <widget class="QComboBox" name="combd">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>70</y>
+      <x>170</x>
+      <y>60</y>
       <width>141</width>
       <height>22</height>
      </rect>
@@ -808,7 +753,7 @@ background-color:rgb(182, 182, 182)
    <widget class="QComboBox" name="combvd">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>170</x>
       <y>20</y>
       <width>141</width>
       <height>20</height>
@@ -820,11 +765,86 @@ background-color:rgb(182, 182, 182)
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>151</width>
+      <width>161</width>
       <height>22</height>
      </rect>
     </property>
    </widget>
+   <widget class="QPushButton" name="pbdp">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>90</y>
+      <width>71</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Подробнее</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QComboBox" name="cbm">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>580</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbms">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>610</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Выбрать</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="z8">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>330</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbz2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>570</y>
+     <width>91</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Подтвердить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>630</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Подтвердить&gt;&gt;</string>
+   </property>
   </widget>
  </widget>
  <resources/>

@@ -22,6 +22,12 @@ class Ui(QtWidgets.QDialog, Form):#
         self.pbzb.clicked.connect(self.zadb)
         self.pbm.clicked.connect(self.mag)
         self.pbmb.clicked.connect(self.magb)
+        self.pbdp.clicked.connect(self.dosp)
+        self.pbms.clicked.connect(self.mags)
+        self.pbmp.clicked.connect(self.pok)
+        self.pbz2.clicked.connect(self.test)
+
+        self.pbz2.hide()
         self.rv.hide()
         self.l4.hide()
         self.l5.hide()
@@ -40,9 +46,7 @@ class Ui(QtWidgets.QDialog, Form):#
         self.z4.hide()
         self.z5.hide()
         self.z6.hide()
-        self.z7.hide()
         self.z8.hide()
-        self.z9.hide()
         self.p3.hide()
         self.z11.hide()
         self.o1.hide()
@@ -66,6 +70,7 @@ class Ui(QtWidgets.QDialog, Form):#
         self.combd.hide()
         self.wd.hide()
         self.led.hide()
+        self.pbdp.hide()
 #Задания
         self.pbz.hide()
         self.pbzb.hide()
@@ -79,17 +84,51 @@ class Ui(QtWidgets.QDialog, Form):#
         self.pbm.hide()
         self.pbmb.hide()
         self.lm.hide()
-        self.twm.hide()
+        self.cbm.hide()
         self.lzm.hide()
         self.lem.hide()
         self.pbmp.hide()
+        self.pbms.hide()
 
 
     connect = sqlite3.connect('1.db')
     cursor = connect.cursor()
-    connect.commit()
+    def test(self):
+        connect = sqlite3.connect('1.db')
+        cursor = connect.cursor()
+        z = "'"
+        cursor.execute('select vop_zad from zadan where name_zad='+z+self.combz.currentText()+z)
+        v=cursor.fetchall()
+        p=v[0][0]
+        self.vop1.setText(str(p))
+
+        cursor.execute('select v1_zad from zadan where name_zad='+z+self.combz.currentText()+z)
+        a = cursor.fetchall()
+        d=a[0][0]
+        self.cb1.setText(str(d))
+        cursor.execute('select v2_zad from zadan where name_zad=' + z + self.combz.currentText() + z)
+        o = cursor.fetchall()
+        t = o[0][0]
+        self.cb2.setText(str(t))
+        cursor.execute('select v3_zad from zadan where name_zad=' + z + self.combz.currentText() + z)
+        y = cursor.fetchall()
+        u = y[0][0]
+        self.cb3.setText(str(u))
+        
+
+    def pok(self):
+        global h,k
+        print(h)
+        print(k)
+        if int(h) >= int(k):
+            self.combp.addItem(str(self.cbm.currentText()))
+            h -= k
+            self.z8.setText(str(h))
+        else:
+            self.lem.setText('Недостаточно среств')
+
     def gle1(self):
-        global q1,vd
+        global q1,vd,h
         q1= self.v1.text()
         connect = sqlite3.connect('1.db')
         cursor = connect.cursor()
@@ -124,9 +163,7 @@ class Ui(QtWidgets.QDialog, Form):#
                 self.z4.setVisible(True)
                 self.z5.setVisible(True)
                 self.z6.setVisible(True)
-                self.z7.setVisible(True)
                 self.z8.setVisible(True)
-                self.z9.setVisible(True)
                 self.p3.setVisible(True)
                 self.z11.setVisible(True)
                 print(1)
@@ -139,6 +176,7 @@ class Ui(QtWidgets.QDialog, Form):#
                 self.p1.hide()
                 self.lo.setText('')
                 self.lr1.setText('')
+                self.z5.setText(q1)
                 print(2)
 
                 self.lp.setVisible(True)
@@ -156,13 +194,19 @@ class Ui(QtWidgets.QDialog, Form):#
                 f= cursor.fetchall()
                 vd =f[0][0]
                 print(vd)
+                cursor.execute('select user_balance from users where iduser=' + z + str(vd) + z)
+                g = cursor.fetchall()
+                print(g)
+                h=g[0][0]
+                print(h)
+                self.z8.setText(str(h))
 
 
                 print('Гл экран вход')
         except:
             self.lo.setText('Ошибка! Неправильно введён Логин или Пароль')
     def reg(self):
-        global q1,vd
+        global q1,vd,h
         q1 = self.r2.text()
         self.lr1.setText('')
         connect = sqlite3.connect('1.db')
@@ -190,9 +234,7 @@ class Ui(QtWidgets.QDialog, Form):#
                             print(0)
                             self.z5.setVisible(True)
                             self.z6.setVisible(True)
-                            self.z7.setVisible(True)
                             self.z8.setVisible(True)
-                            self.z9.setVisible(True)
                             self.p3.setVisible(True)
                             self.z11.setVisible(True)
 
@@ -219,9 +261,12 @@ class Ui(QtWidgets.QDialog, Form):#
                             f = cursor.fetchall()
                             vd = f[0][0]
                             print(vd)
+                            cursor.execute('select user_balance from users where iduser=' + z + vd + z)
+                            g = cursor.fetchall()
+                            h = g[0][0]
+                            self.z8.setText(h)
 
-
-
+                            self.z5.setText(q1)
                             print('Гл экран рег')
                         else:
                             self.lr1.setText('Ошибка: Проверьте правильность написания данных')
@@ -252,9 +297,7 @@ class Ui(QtWidgets.QDialog, Form):#
             self.z4.setVisible(True)
             self.z5.setVisible(True)
             self.z6.setVisible(True)
-            self.z7.setVisible(True)
             self.z8.setVisible(True)
-            self.z9.setVisible(True)
             self.p3.setVisible(True)
             self.z11.setVisible(True)
 
@@ -276,6 +319,7 @@ class Ui(QtWidgets.QDialog, Form):#
             self.pbz.setVisible(True)
 
             self.pbm.setVisible(True)
+            self.z5.setText(q1)
 
             print('Гл экран обн')
         else:
@@ -297,9 +341,7 @@ class Ui(QtWidgets.QDialog, Form):#
         self.z4.setVisible(True)
         self.z5.setVisible(True)
         self.z6.setVisible(True)
-        self.z7.setVisible(True)
         self.z8.setVisible(True)
-        self.z9.setVisible(True)
         self.p3.setVisible(True)
         self.z11.setVisible(True)
 
@@ -314,6 +356,7 @@ class Ui(QtWidgets.QDialog, Form):#
 
     def dost(self):
         global vd
+        self.pbdp.setVisible(True)
         self.pbd.hide()
         self.pbdb.setVisible(True)
         self.combd.setVisible(True)
@@ -323,7 +366,7 @@ class Ui(QtWidgets.QDialog, Form):#
 
         self.ld.setVisible(True)
         print(22)
-        self.led.setVidible(True)
+        self.led.setVisible(True)
         print(2)
 
         connect = sqlite3.connect('1.db')
@@ -336,12 +379,15 @@ class Ui(QtWidgets.QDialog, Form):#
             b.append(a[i][0])
         print(b)
         self.combd.addItems(b)
+        self.led.setText('Зарегистрируйтесь')
+        self.combvd.addItem('Добро пожаловать!')
 
 
 
 
 
     def dostb(self):
+        self.pbdp.hide()
         self.pbd.setVisible(True)
         self.pbdb.hide()
         self.combd.hide()
@@ -351,8 +397,16 @@ class Ui(QtWidgets.QDialog, Form):#
         self.wd.hide()
         self.ld.hide()
         self.led.hide()
+    def dosp(self):
+        if self.combd.currentText() == 'Первая покупка':
+            self.led.setText('Совершите первую покупку')
+        if self.combd.currentText() == 'Добро пожаловать!':
+            self.led.setText('Зарегистрируйтесь')
+
+
     def zad(self):
         self.pbz.hide()
+        self.pbz2.setVisible(True)
         self.pbzb.setVisible(True)
         self.lz.setVisible(True)
         self.combz.setVisible(True)
@@ -360,7 +414,20 @@ class Ui(QtWidgets.QDialog, Form):#
         self.cb1.setVisible(True)
         self.cb2.setVisible(True)
         self.cb3.setVisible(True)
+        connect = sqlite3.connect('1.db')
+        cursor = connect.cursor()
+        cursor.execute('select name_zad from zadan')
+        print(1)
+        a = cursor.fetchall()
+        b = []
+        for i in range(len(a)):
+            b.append(a[i][0])
+        print(b)
+        self.combz.addItems(b)
+
+
     def zadb(self):
+        self.pbz2.hide()
         self.pbz.setVisible(True)
         self.pbzb.hide()
         self.lz.hide()
@@ -373,20 +440,46 @@ class Ui(QtWidgets.QDialog, Form):#
         self.pbm.hide()
         self.pbmb.setVisible(True)
         self.lm.setVisible(True)
-        self.twm.setVisible(True)
+        self.cbm.setVisible(True)
         self.lzm.setVisible(True)
         self.lem.setVisible(True)
         self.pbmp.setVisible(True)
+        self.pbms.setVisible(True)
+        print(0)
+        connect = sqlite3.connect('1.db')
+        cursor = connect.cursor()
+        cursor.execute('select name_tovar from magazin')
+        a = cursor.fetchall()
+        b = []
+        print(1)
+        for i in range(len(a)):
+            b.append(a[i][0])
+        print(b)
+        self.cbm.addItems(b)
+        connect.commit()
     def magb(self):
+
         self.pbm.setVisible(True)
         self.pbmb.hide()
         self.lm.hide()
-        self.twm.hide()
+        self.cbm.hide()
         self.lzm.hide()
         self.lem.hide()
         self.pbmp.hide()
+        self.pbms.hide()
+    def mags(self):
+        global k
+        n = self.cbm.currentText()
+        print(n)
+        connect = sqlite3.connect('1.db')
+        cursor = connect.cursor()
+        z = "'"
 
-
+        cursor.execute('select zena_mag from magazin where name_tovar=' + z + n + z)
+        j = cursor.fetchall()
+        k = j[0][0]
+        print(k)
+        self.lem.setText(str(k) + ' Акселькоинов')
 
 
     def obn(self):
@@ -416,9 +509,7 @@ class Ui(QtWidgets.QDialog, Form):#
         self.z4.hide()
         self.z5.hide()
         self.z6.hide()
-        self.z7.hide()
         self.z8.hide()
-        self.z9.hide()
         self.z11.hide()
         self.p3.hide()
 
@@ -482,9 +573,7 @@ class Ui(QtWidgets.QDialog, Form):#
         self.z4.hide()
         self.z5.hide()
         self.z6.hide()
-        self.z7.hide()
         self.z8.hide()
-        self.z9.hide()
         self.p3.hide()
         self.z11.hide()
 
